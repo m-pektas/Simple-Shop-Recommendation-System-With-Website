@@ -42,11 +42,11 @@ neighCount : will use number of best similer user <br>
 <br><br>
 <h3>Screenshots</h3> <br>
 
-<img src="./screenshots/ss1.PNG" width="500px"/> <BR>
+<img src="./screenshots/ss1.PNG" width="800px"/> <BR>
 
-<img src="./screenshots/ss2.PNG" width="500px"/> <BR>
+<img src="./screenshots/ss2.PNG" width="800px"/> <BR>
 
-<img src="./screenshots/ss4.PNG" width="500px"/> <BR>
+<img src="./screenshots/ss4.PNG" width="800px"/> <BR>
  
-<img src="./screenshots/ss5.PNG" width="500px"/>
+<img src="./screenshots/ss5.PNG" width="800px"/>
 
