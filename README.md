@@ -30,11 +30,11 @@ This project made with;
 <ul>
 
 <br><br>
-Create Recommendation Object; <br>
+<H3>Create Recommendation Object;</H3> <br>
 recommendation_system = System(path="./data/user_product_data.csv",sep=",",sim_metric="cosine",neighCount=3)
 
 <br>
-Parameters;<br>
+<H3>Parameters;</H3><br>
 path : dataset path <br>
 sep : data seperator char <br>
 sim_metric : similarity metric for calculate users smilarity <br>
@@ -43,11 +43,11 @@ neighCount : will use number of best similer user <br>
 <br><br>
 <h3>Secreenshots</h3> <br>
 
-<img src="./screenshots/ss1.PNG" width="500px"/> <BR>
+<img src="./screenshots/ss1.png" width="500px"/> <BR>
 
-<img src="./screenshots/ss2.PNG" width="500px"/> <BR>
+<img src="./screenshots/ss2.png" width="500px"/> <BR>
 
-<img src="./screenshots/ss4.PNG" width="500px"/> <BR>
+<img src="./screenshots/ss4.png" width="500px"/> <BR>
  
-<img src="./screenshots/ss5.PNG" width="500px"/>
+<img src="./screenshots/ss5.png" width="500px"/>
 
