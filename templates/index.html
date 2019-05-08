@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Muhammed Pektaş</title>
+  
+  <!-- Bootstrap core CSS -->
+  <link href="../static/home_page/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="../static/home_page/css/shop-homepage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Shopping Center - Simple Recommendation System Website</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+      <div class="col-lg-10">
+        <br>
+        <b>Recommendation System can suggest products to this userids;</b>
+        <b>[
+        {% for id in userIds %}
+        <i>{{ id }},</i>
+        {% endfor %}
+        ]</b>
+        <div class="row" style="margin: 50px">
+            <form action = "{{ url_for('recommend') }}" method = "POST">
+                    <div class="input-group"> 
+                    <input type="text"  name="Id" class="form-control input-lg" placeholder="Please! Enter Your User Id." style="border-color: black; width: 550px;">
+                      <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit">Go!</button>
+                      </span>    
+                    </div><!-- /input-group -->
+                    {% if isSuggest==True %}
+                    <i>This product for you. I think you like that. :*</i>
+                    <img src="{{product_src}}" class="img-rounded"  width="304" height="200">
+                    {% else %}
+                    <i>{{warning_message}}</i>
+                    {% endif %}
+                </form>
+        </div>
+
+        
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-80">
+              <a href="#"><img class="card-img-top" src="../static/images/product1.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Classic Watch</a>
+                </h4>
+                <h5>$249.99</h5>
+                <button type="button" class="btn btn-warning btn-lg">
+                    Buy
+                  </button>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-80">
+              <a href="#"><img class="card-img-top" src="../static/images/product2.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Smart Watch</a>
+                </h4>
+                <h5>$199.99</h5>
+                <button type="button" class="btn btn-warning btn-lg">
+                  Buy
+                </button>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-80">
+              <a href="#"><img class="card-img-top" src="../static/images/product3.jpg" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Headphone</a>
+                </h4>
+                <h5>$69.99</h5>
+                <button type="button" class="btn btn-warning btn-lg">
+                    Buy
+                  </button>
+              </div>
+              <div class="card-footer"></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.row -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Simple Recommendation System Website</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../static/home_page/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/home_page/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+
+</body>
+
+</html>

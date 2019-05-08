@@ -1,0 +1,48 @@
+Similarity Calculating..
+Similarity Ended.
+
+Not Known Users Finding..
+
+1  kiþisi Product2 ürünü
+3  kiþisi Product6 ürünü
+5  kiþisi Product5 ürünü
+8  kiþisi Product5 ürünü
+10  kiþisi Product4 ürünü
+10  kiþisi Product10 ürünü
+11  kiþisi Product6 ürünü
+12  kiþisi Product2 ürünü
+12  kiþisi Product5 ürünü
+14  kiþisi Product3 ürünü
+
+Finiding Finished.
+
+
+id giriniz :10
+
+Recommandation System Running..
+
+En benzerler: [0.0, 0.059550934688941348, 0.06828280754622329, 0.077461470323914927]
+Benzeyen Kullanýcý Id'leri: [9, 13, 15]
+10 - Product4
+
+
+
+Sonuç
+
+Product4  ürünü  10  no'lu kullanýcýya gönül rahatlýðýyla önerilebilir.
+Total: 15.0
+Avg: 5.0
+
+Recommendation System Ended..
+
+10 - Product10
+
+
+
+Sonuç
+
+Product10  ürünü  10  no'lu kullanýcýya önerilemez. !!!!
+Total: 9.0
+Avg: 3.0
+
+Recommendation System Ended..
