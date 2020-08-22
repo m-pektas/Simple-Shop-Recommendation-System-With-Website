@@ -1,4 +1,4 @@
-# Simple Shop Recommendation System With Website
+# Shop Recommendation System
 
 This project is a simple recommendation system. Both the recommendation system and a simple website were prepared in the project. Since the project is a basic project, the user who visits the site should be given the system manually. In a real-life project, this information can be obtained from user input or cookies.
 
